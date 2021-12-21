@@ -2,7 +2,7 @@ import plotly.express as px
 import pandas as pd
 import csv
 
-df = pd.read_csv("pro 107/data.csv")
+df = pd.read_csv("data.csv")
 
 student_data = df.groupby(["student_id","level"],as_index=False)["attempt"].mean()
 
